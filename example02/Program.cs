@@ -9,15 +9,15 @@
 int index = 0;
 
 int[] array = new int[10];
-// Заполняет массив
+
 while (index < 10)
 {
-    array[index] = new Random().Next(-20, 20); // [10, 99]
+    array[index] = new Random().Next(-20, 20); 
     index++;
 }
 
 index = 0;
-// печатаем массив
+
 Console.WriteLine("Рандомный массив:");
 while (index <= 9)
 {
@@ -28,7 +28,7 @@ while (index <= 9)
 
 Console.WriteLine();
 index = 1;
-// Исключение элементов нарушения возрастания
+
 int currentElement = array[0];
 Console.WriteLine("Отсортированный массив по возростанию:");
 Console.WriteLine(currentElement);
